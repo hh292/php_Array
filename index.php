@@ -19,8 +19,11 @@
         'lst_nm' => 'Kulkarni',
     ),
   );
+  $in_array_3 = array(6, "A", 6, "A", "C", "D", "D");
+  
   $obj->print_1($in_array_1);
   $obj->print_2($in_array_2);
+  $obj->print_3($in_array_3);
   
 
   class main {
@@ -65,11 +68,27 @@
       print_r($domain);
       
     }
+    
+    // function 3 : array_count_values  ...hh292
+
+    public function print_3($in_array_3)
+    {
+     echo'<hr>';
+     echo '<h2> Function Name : array_count_values </h2>'."\r";
+     echo 'Description: Counts all the values of an array </br>';
+     echo 'Input --->';
+     print_r($in_array_3);
+
+     $domain = array_count_values($in_array_3);
+     echo '</br>Output --->';
+     print_r($domain);
+    }
+
    
      public function __destruct() {
 
      echo '</br> <h3>Finally I\'m Done with string functions. </h3> </br>';
-     echo '</br> ********************Copyright Assignment @Himanshu Hunge (hh292)***************************';
+     echo '</br> *******************Copyright Assignment @Himanshu Hunge (hh292)***************************';
   
    } 
 }
