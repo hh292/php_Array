@@ -20,10 +20,11 @@
     ),
   );
   $in_array_3 = array(6, "A", 6, "A", "C", "D", "D");
-  
+  $in_array_4 = array(2, 4, 6, 8);
   $obj->print_1($in_array_1);
   $obj->print_2($in_array_2);
   $obj->print_3($in_array_3);
+  $obj->print_4($in_array_4);
   
 
   class main {
@@ -83,12 +84,27 @@
      echo '</br>Output --->';
      print_r($domain);
     }
+    
+    // function 4 : array_sum ...hh292
+
+    public function print_4($in_array_4)
+    {
+        echo '<hr>';
+        echo '<h2> Function Name : array_sum </h2></br>'; 
+        echo 'Description: Calculate the sum of values in an array </br>';    
+        echo 'Input ---->'; 
+        print_r($in_array_4);
+
+      $domain = array_sum($in_array_4);
+      echo "</br>Output --->";
+      print_r($domain);
+    } 
 
    
      public function __destruct() {
 
      echo '</br> <h3>Finally I\'m Done with string functions. </h3> </br>';
-     echo '</br> *******************Copyright Assignment @Himanshu Hunge (hh292)***************************';
+     echo '</br> *********************Copyright Assignment @Himanshu Hunge (hh292)***************************';
   
    } 
 }
