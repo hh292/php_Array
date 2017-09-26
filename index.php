@@ -25,6 +25,7 @@
   $in_array_6 = array(0 => 'Tennis', 1 => 'Baseball', 2 => 'Cricket', 3 => 'Hockey');
   $in_array_7 = array("Apple", "banana", "Orange", "raspberry", "Watermelon") ;
   $in_array_8 = array("Banana", "Apple", "Orange", "Watermelon", "Grapes");
+  $in_array_9 = array(2,4,5,9);
   $obj->print_1($in_array_1);
   $obj->print_2($in_array_2);
   $obj->print_3($in_array_3);
@@ -33,6 +34,7 @@
   $obj->print_6($in_array_6);
   $obj->print_7($in_array_7);
   $obj->print_8($in_array_8);
+  $obj->print_9($in_array_9);
 
   class main {
 
@@ -169,10 +171,26 @@
 
     }
     
+     // function 9 : array_product ...hh292
+  
+    public function print_9($in_array_9)
+    {
+        echo'<hr>';
+        echo'<h2> Function Name : array_product </h2></br>';
+        echo'Description: returns the product of values in an array </br>' ."\r";
+        echo 'Input --->';
+        print_r($in_array_9);
+
+        $domain = array_product($in_array_9);
+        echo '</br>Output --->';
+        print_r($domain);
+
+    }
+    
      public function __destruct() {
 
      echo '</br> <h3>Finally I\'m Done with string functions. </h3> </br>';
-     echo '</br> *************************Copyright Assignment @Himanshu Hunge (hh292)***************************';
+     echo '</br> **************************Copyright Assignment @Himanshu Hunge (hh292)***************************';
   
    } 
 }
