@@ -24,6 +24,7 @@
   $in_array_5 = array("Name" => "Himanshu", "Height" => "181 cm", "UCID" => "hh292");
   $in_array_6 = array(0 => 'Tennis', 1 => 'Baseball', 2 => 'Cricket', 3 => 'Hockey');
   $in_array_7 = array("Apple", "banana", "Orange", "raspberry", "Watermelon") ;
+  $in_array_8 = array("Banana", "Apple", "Orange", "Watermelon", "Grapes");
   $obj->print_1($in_array_1);
   $obj->print_2($in_array_2);
   $obj->print_3($in_array_3);
@@ -31,6 +32,7 @@
   $obj->print_5($in_array_5);
   $obj->print_6($in_array_6);
   $obj->print_7($in_array_7);
+  $obj->print_8($in_array_8);
 
   class main {
 
@@ -125,7 +127,7 @@
     {
         echo'<hr>';
         echo'<h2> Function Name : array_search </h2></br>'; 
-        echo 'Description: Searches the array for a given value and returns the first corresponding key if successful. Here, we are searching for <b><i>Cricket</i></b> :' ."\r"; 
+        echo 'Description:Searches the array for a given value and returns the first corresponding key if successful. Here, we are searching for <b><i>Cricket</i></b> :' ."\r"; 
         echo '</br>Input --->';
         print_r($in_array_6); 
         $domain = array_search('Cricket', $in_array_6 );
@@ -151,7 +153,21 @@
         print_r($domain);
 
     }
+    
+    // function 8 : sort  ...hh292
+  
+    public function print_8($in_array_8)
+    {
+      echo'<hr>';
+        echo'<h2> Function Name : Sort </h2></br>'; 
+        echo 'Description:Sort an array </br>' ."\r"; 
+        echo 'Input --->';
+        print_r($in_array_8); 
+        $domain = sort($in_array_8);
+        echo '</br>Output --->';
+        print_r($in_array_8);
 
+    }
     
      public function __destruct() {
 
