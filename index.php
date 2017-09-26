@@ -2,6 +2,7 @@
 
   $obj = new main();
   $in_array_1 = array("a" => "green", "red", "b" => "green", "blue", "red");
+
   $in_array_2 = array(
     array(
         'id' => hh292,
@@ -19,6 +20,7 @@
         'lst_nm' => 'Kulkarni',
     ),
   );
+
   $in_array_3 = array(6, "A", 6, "A", "C", "D", "D");
   $in_array_4 = array(2, 4, 6, 8);
   $in_array_5 = array("Name" => "Himanshu", "Height" => "181 cm", "UCID" => "hh292");
@@ -26,6 +28,7 @@
   $in_array_7 = array("Apple", "banana", "Orange", "raspberry", "Watermelon") ;
   $in_array_8 = array("Banana", "Apple", "Orange", "Watermelon", "Grapes");
   $in_array_9 = array(2,4,5,9);
+  $in_array_10 = array('Baseball','Fooseball','Tennis','Soccer');
   $obj->print_1($in_array_1);
   $obj->print_2($in_array_2);
   $obj->print_3($in_array_3);
@@ -35,19 +38,20 @@
   $obj->print_7($in_array_7);
   $obj->print_8($in_array_8);
   $obj->print_9($in_array_9);
+  $obj->print_10($in_array_10);
 
   class main {
 
     public function __construct() {
 
 
-      echo '<h1>********PHP Inbuilt Array Functions********** </h1>';
+      echo '<h1>********PHP Inbuilt Array Functions ******** </h1>';
 
     }
    
     //function 1 : array_unique ...hh292
     
-     public function print_1($in_array_1) {
+    public function print_1($in_array_1) {
       
       
       echo '</br><h2> Function Name : array_unique </h2>'."\r";
@@ -60,8 +64,8 @@
       print_r($domain);
       
       }
-      
-      // function 2 : array_column ...hh292
+   
+   // function 2 : array_column ...hh292
    
     public function print_2($in_array_2)
     {
@@ -78,8 +82,8 @@
       print_r($domain);
       
     }
-    
-    // function 3 : array_count_values  ...hh292
+
+  // function 3 : array_count_values  ...hh292
 
     public function print_3($in_array_3)
     {
@@ -93,8 +97,8 @@
      echo '</br>Output --->';
      print_r($domain);
     }
-    
-    // function 4 : array_sum ...hh292
+
+  // function 4 : array_sum ...hh292
 
     public function print_4($in_array_4)
     {
@@ -108,8 +112,8 @@
       echo "</br>Output --->";
       print_r($domain);
     } 
-    
-    // function 5 : array_values  ...hh292
+
+  // function 5 : array_values  ...hh292
 
     public function print_5($in_array_5)
     {
@@ -123,6 +127,7 @@
         print_r($domain); 
     }
 
+  
    // function 6 : strtoupper ...hh292
   
     public function print_6($in_array_6)
@@ -136,8 +141,8 @@
         echo '</br>Output --->';
         print_r($domain);
     }
-    
-    // function 7 : array_pop  ...hh292
+  
+  // function 7 : array_pop  ...hh292
   
     public function print_7($in_array_7)
     {
@@ -155,8 +160,8 @@
         print_r($domain);
 
     }
-    
-    // function 8 : sort  ...hh292
+
+  // function 8 : sort  ...hh292
   
     public function print_8($in_array_8)
     {
@@ -170,8 +175,8 @@
         print_r($in_array_8);
 
     }
-    
-     // function 9 : array_product ...hh292
+
+  // function 9 : array_product ...hh292
   
     public function print_9($in_array_9)
     {
@@ -185,12 +190,30 @@
         echo '</br>Output --->';
         print_r($domain);
 
+    }   
+  
+  // function 10 : array_push ...hh292
+
+    public function print_10($in_array_10)
+
+    {
+
+      echo'<hr>';
+      echo'<h2>Function Name : array_push </h2></br>';
+      echo'Description: Push one or more elements onto the end of array.Here,in this example we are pushing element <b><i>Cricket</i></b> and <b><i>Formula 1</i></b>.' ."\r";
+      echo '</br>Input --->';
+      print_r($in_array_10);
+
+      $domain = array_push($in_array_10, "Cricket", "Formula 1");
+      echo'</br>Output Array --->'."\r";
+      print_r($in_array_10);
+      echo '<hr>';    
     }
-    
-     public function __destruct() {
+
+    public function __destruct() {
 
      echo '</br> <h3>Finally I\'m Done with string functions. </h3> </br>';
-     echo '</br> **************************Copyright Assignment @Himanshu Hunge (hh292)***************************';
+     echo '</br> ********************Copyright Assignment @Himanshu Hunge (hh292)***************************';
   
    } 
 }
